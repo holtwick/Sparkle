@@ -88,7 +88,7 @@ typedef enum {
 	long long valueA, valueB;
     SUCharacterType typeA, typeB;
 	
-    n = MIN([partsA count], [partsB count]);
+    n = (int)MIN([partsA count], [partsB count]);
     for (i = 0; i < n; ++i) {
         partA = [partsA objectAtIndex:i];
         partB = [partsB objectAtIndex:i];
